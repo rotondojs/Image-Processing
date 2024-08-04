@@ -1,0 +1,55 @@
+Supported instructions are:
+
+load image-path image-name (loads an image, that supports PNG, JPG, GIF, BMP, PPM; need to be done to support the operations below)
+load picture res/picture.png
+
+save image-dest image-name (saves an image to a given destination path)
+save picture res/picture.png
+
+horizontal-flip image-name edited-image-name (flips the given loaded image-name horizontally)
+horizontal-flip picture picture-horizFlip
+
+vertical-flip image-name dest-image-name (flips the image vertically)
+vertical-flip picture picture-vertFlip
+
+brighten change image-name dest-image-name (changes the brightness of the image by the change. Change should be an integer.)
+brighten picture picture-bright 50
+
+value-component image-name dest-image-name (greyscale the image to the maximum value of its components)
+value-component picture picture-value
+
+intensity-component image-name dest-image-name (greyscale the image to the average of the rgb values)
+intensity-component picture picture-intensity
+
+luma-component image-name dest-image-name (greyscale the image to the luma value)
+luma-component picture picture-luma
+
+red-component image-name dest-image-name (greyscale the image to the red value of its components)
+red-component picture picture-red
+
+green-component image-name dest-image-name (greyscale the image to the green value of its components)
+green-component picture picture-green
+
+blue-component image-name dest-image-name (greyscale the image to the blue value of its components)
+blue-component picture picture-blue
+
+sepia image-name dest-image-name (sepia filter applied to image)
+sepia picture picture-sepia
+
+blur image-name dest-image-name (blur filter applied to image)
+blur picture picture-blur
+
+sharpen image-name dest-image-name (sharpen filter applied to image)
+sharpen picture picture-sharpen
+
+luma-filter-greyscale image-name dest-image-name (produce a luma greyscale using a filter)
+luma-filter-greyscale picture picture-luma-greyscale
+
+----------------------------------------------------------------------------------------
+GUI GUIDE
+-----------------------------------------------------------------------------------------
+- Load an image from your device using the load operations on the right
+- Choose an image to edit from the image selector on the left
+- Apply any of the operations on the right to the photo (any required inputs will be prompted)
+    - A new image will appear in the image list
+    - to save it. Select it and use the save operation
